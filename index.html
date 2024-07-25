@@ -22,17 +22,22 @@
             padding: 10px;
             display: flex;
             align-items: center;
+            flex-direction: column; /* Added to stack the images vertically */
         }
         .top-bar img {
             height: 40px;
             margin-right: 10px;
+        }
+        .top-bar a img {
+            margin-top: 10px;
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
         }
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
             flex: 1;
-            flex-direction: column; /* Added to stack the images vertically */
         }
         .images {
             display: flex;
@@ -66,11 +71,11 @@
 
     <div class="top-bar">
         <img src="Logo.png" alt="Logo">
+        <a href="https://plantsvszombies.wiki.gg"><img src="Oldwiki.PNG" alt="PvZ Wiki"></a> <!-- New image added here -->
         <span>PvZ Wiki</span>
     </div>
 
     <div class="container">
-        <a href="https://plantsvszombies.wiki.gg"><img src="Oldwiki.PNG" alt="PvZ Wiki"></a> <!-- New image added here -->
         <div class="images">
             <a class="tall-image" href="page1.html"><img src="Zombee.png" alt="Image 1"></a>
             <a class="tall-image" href="page2.html"><img src="Pea.png" alt="Image 2"></a>
