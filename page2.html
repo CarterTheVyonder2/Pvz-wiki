@@ -25,11 +25,13 @@
             color: white;
             padding: 15px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
         .infobox {
             float: right;
             margin: 0 0 1em 1em;
-            width: 300px;
+            width: 250px;
             border: 1px solid #aaa;
             background-color: #f9f9f9;
             padding: 10px;
@@ -38,12 +40,27 @@
         .infobox img {
             width: 100%;
             height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
         }
-        .infobox-caption {
+        .infobox-header {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+            background-color: #5b6063;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .infobox-content {
             font-size: 0.9em;
             padding: 5px;
+        }
+        .infobox-caption {
+            font-size: 0.85em;
             text-align: center;
             color: #555;
+            padding-top: 5px;
         }
         .content {
             text-align: justify;
@@ -64,26 +81,35 @@
             padding: 10px;
             text-align: center;
             margin-top: 20px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Peashooter</h1>
+        Peashooter
     </div>
     <div class="container">
         <div class="main-content">
             <div class="infobox">
-                <img src="Pea.png" alt="Sample Image">
-                <div class="infobox-caption">I am god</div>
+                <div class="infobox-header">Peashooter</div>
+                <img src="Pea.png" alt="Peashooter Image">
+                <div class="infobox-caption">"I am god"</div>
+                <div class="infobox-content">
+                    <p><strong>Type:</strong> Plant</p>
+                    <p><strong>Power:</strong> Shoots peas at zombies</p>
+                    <p><strong>Sun Cost:</strong> 100</p>
+                    <p><strong>Recharge:</strong> Fast</p>
+                </div>
             </div>
             <div class="content">
+                <h2>About Peashooter</h2>
                 <p>
                     Dave Is Dead.
                 </p>
                 <h2>Section Heading</h2>
                 <p>
-                    Theres No going back now.
+                    There's No going back now.
                 </p>
                 <h3>Subsection Heading</h3>
                 <p>
