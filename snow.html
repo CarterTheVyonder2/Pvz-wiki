@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1100px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .header {
+            color: #555;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .infobox {
+            width: 220px;
+            margin: 0 auto 20px;
+            border: 2px solid #ccc;
+            background-color: #f0f8ff;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .infobox img {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .infobox-caption {
+            font-size: 0.85em;
+            color: #555;
+            padding-top: 5px;
+        }
+        .content {
+            font-size: 1.2em;
+            color: #555;
+        }
+        /* Snow effect */
+        @keyframes snow {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            color: #ccc;
+            font-size: 1em;
+            user-select: none;
+            pointer-events: none;
+            animation: snow linear infinite;
+        }
+        /* Generate random snowflakes */
+        ${Array.from({ length: 100 })
+            .map(
+                (_, i) =>
+                    `.snowflake:nth-child(${i + 1}) {
+                        left: ${Math.random() * 100}vw;
+                        font-size: ${Math.random() * 1 + 0.5}em;
+                        animation-duration: ${Math.random() * 3 + 2}s;
+                        animation-delay: ${Math.random() * 5}s;
+                    }`
+            )
+            .join('')}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Snowy</div>
+        <div class="infobox">
+            <img src="jack.png" alt="Snow Jackfruit Image">
+            <div class="infobox-caption">Snow Jackfruit</div>
+        </div>
+        <div class="content">
+            It’s so cold…
+        </div>
+    </div>
+
+    <!-- Snowflakes -->
+    ${Array.from({ length: 100 })
+        .map(() => `<div class="snowflake">❄</div>`)
+        .join('')}
+
+</body>
+</html>
