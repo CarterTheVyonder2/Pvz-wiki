@@ -7,63 +7,69 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: url('Bg.gif') no-repeat center center fixed;
-            background-size: cover;
+            background-color: black;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: white;
         }
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
         }
         .header {
-            background-color: #5b6063;
-            color: white;
+            background-color: #006400; /* Dark Green */
+            color: #00FF00; /* Bright Green */
             padding: 15px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
         .infobox {
             float: right;
             margin: 0 0 1em 1em;
-            width: 300px;
-            border: 1px solid #aaa;
-            background-color: #f9f9f9;
+            width: 220px;
+            border: 2px solid #00FF00; /* Green Border */
+            background-color: #001f00; /* Dark Green Background */
             padding: 10px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
         }
         .infobox img {
-            width: 100%;
+            width: 80%; /* Smaller Image */
             height: auto;
+            display: block;
+            margin: 0 auto 10px;
+            border: 1px solid #00FF00; /* Green Border for Image */
         }
         .infobox-caption {
-            font-size: 0.9em;
-            padding: 5px;
+            font-size: 0.85em;
             text-align: center;
-            color: #555;
+            color: #00FF00; /* Bright Green */
+            padding-top: 5px;
         }
         .content {
             text-align: justify;
         }
         h1, h2, h3 {
             font-family: 'Georgia', serif;
+            color: #00FF00; /* Bright Green Headings */
         }
         a {
-            color: #006cb0;
+            color: #00FF00;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
         .footer {
-            background-color: #5b6063;
-            color: white;
+            background-color: #006400; /* Dark Green */
+            color: #00FF00;
             padding: 10px;
             text-align: center;
             margin-top: 20px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -74,21 +80,16 @@
     <div class="container">
         <div class="main-content">
             <div class="infobox">
-                <img src="Dave.png" alt="Sample Image">
+                <img src="Dave.png" alt="Dave Image">
                 <div class="infobox-caption">Help me</div>
             </div>
             <div class="content">
-                <p>
-                    Help me.
-                </p>
                 <h2>Help me</h2>
-                <p>
-                    Help me.
-                </p>
+                <p>Help me.</p>
                 <h3>Help me</h3>
-                <p>
-                    Help me.
-                </p>
+                <p>Help me.</p>
+                <h3>Help me</h3>
+                <p>Help me.</p>
             </div>
         </div>
     </div>
