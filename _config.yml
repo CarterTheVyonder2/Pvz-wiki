@@ -1,1 +1,4 @@
-
+# _config.yml
+title: "PvZ Wiki"
+description: "A fan wiki for Plants vs. Zombies characters"
+theme: jekyll-theme-cayman # Optional: you can set a GitHub Pages-supported theme here
